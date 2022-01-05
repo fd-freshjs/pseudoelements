@@ -39,7 +39,7 @@ p {
   text-align: center;
 
   -webkit-box-shadow: 0px 9px 27px -3px #000000; 
-  box-shadow: 0px 9px 27px -3px #000000 inset;
+  box-shadow: 0px 9px 27px -3px #000000;
 }
 
 .nav-item {
@@ -95,12 +95,22 @@ p {
   left: 100%;
 }
 
+.list {
+  padding-left: 30px;
+}
+
+.list > li {
+  position: relative;
+}
+
 .list > li:nth-child(2n)::before {
   display: inline-block;
-  content: '';
-  vertical-align: -2px;
   width: 25px;
   height: 25px;
-  background-image: url(../icons/map.png);
-  background-size: cover;
+
+  content: url(../icons/circle.svg);
+  vertical-align: -0.05em;
+
+  position: absolute;
+  right: 102%;
 }

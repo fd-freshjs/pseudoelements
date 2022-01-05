@@ -1,4 +1,3 @@
-
 :root {
   font-size: 28px;
   font-family: serif;
@@ -15,101 +14,57 @@ body {
   height: 200vh;
 }
 
-h1 {
-  font-weight: 700;
-}
-
-p {
-  margin: 1em 0;
-}
-
-.content {
-  margin-top: 90px;
-  padding: 20px;
-}
-
 .navigation {
   background-color: rgb(197, 194, 194);
   padding: 30px;
-  
+
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   text-align: center;
 
-  -webkit-box-shadow: 0px 9px 27px -3px #000000; 
+  -webkit-box-shadow: 0px 9px 27px -3px #000000;
   box-shadow: 0px 9px 27px -3px #000000;
 }
 
 .nav-item {
   display: inline-block;
 
-  background-color: lemonchiffon;
-
   text-transform: lowercase;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.nav-item + .nav-item {
+  margin-left: 30px;
 }
 
 .nav-item::first-letter {
   text-transform: capitalize;
 }
 
-.parag::first-letter {
-  color: red;
-  font-size: 3em;
-}
-
-.parag::first-line {
-  background-color: lightpink;
-}
-
-.parag {
-  position: relative;
-  border: 1px solid black;
-}
-
-.parag::selection {
-  color: blue;
-  background-color: rgb(192, 226, 43);
-}
-
-.parag::before {
-  display: block;
-  content: open-quote;
-  background-color: coral;
-  color: blue;
-  
-  position: absolute;
-  bottom: 100%;
-  right: 100%;
-}
-
-.parag::after {
-  content: close-quote;
-  background-color: coral;
-  color: blue;
-
-  position: absolute;
-  top: 100%;
-  left: 100%;
-}
-
-.list {
-  padding-left: 30px;
-}
-
-.list > li {
-  position: relative;
-}
-
-.list > li:nth-child(2n)::before {
+.nav-item a {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  text-decoration: none;
+  color: #fffd01;
+  padding: 30px;
 
-  content: url(../icons/circle.svg);
+  background-color: #9dbcd4;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 
-  position: absolute;
-  right: 101%;
-  top: 3px;
+  transition-property: box-shadow;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-item a:hover {
+  background-color: #6d5acf;
+  color: #fffd01;
+}
+
+.nav-item:hover {
+  -webkit-box-shadow: 5px 14px 15px 5px rgba(0, 0, 0, 0.47);
+  box-shadow: 5px 14px 15px 5px rgba(0, 0, 0, 0.205);
 }

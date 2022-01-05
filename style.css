@@ -64,7 +64,33 @@ p {
   background-color: lightpink;
 }
 
+.parag {
+  position: relative;
+  border: 1px solid black;
+}
+
 .parag::selection {
   color: blue;
   background-color: rgb(192, 226, 43);
+}
+
+.parag::before {
+  display: block;
+  content: '<<';
+  background-color: coral;
+  color: blue;
+  
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+}
+
+.parag::after {
+  content: '>>';
+  background-color: coral;
+  color: blue;
+
+  position: absolute;
+  top: 100%;
+  left: 100%;
 }

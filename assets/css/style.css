@@ -37,7 +37,7 @@ body {
   overflow: hidden;
   box-shadow: 0;
 
-  transition-property: box-shadow;
+  transition-property: box-shadow transform;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
@@ -70,4 +70,5 @@ body {
 .nav-item:hover {
   -webkit-box-shadow: 5px 14px 15px 5px rgba(0, 0, 0, 0.47);
   box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.205);
+  transform: scale(1.05);
 }

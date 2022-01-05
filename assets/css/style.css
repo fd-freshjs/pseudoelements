@@ -108,8 +108,8 @@ p {
   height: 25px;
 
   content: url(../icons/circle.svg);
-  vertical-align: -0.05em;
 
   position: absolute;
-  right: 102%;
+  right: 101%;
+  top: 3px;
 }
